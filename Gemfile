@@ -13,7 +13,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'puma'
 gem 'simple_form', '~> 3.0.0'
 gem 'bootstrap-sass', '~> 3.1.1.0'
-gem 'monologue', github: 'jipiboily/monologue'
 
 group :doc do
   gem 'sdoc', '~> 0.4.0'
