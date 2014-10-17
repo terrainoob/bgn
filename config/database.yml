@@ -1,0 +1,26 @@
+login: &login
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: cbooth
+  password: booth09
+
+connection: &connection
+  encoding: unicode
+  pool: 5
+
+
+development:
+  database: bgn_development
+  <<: *login
+  <<: *connection
+
+test:
+  database: bgn_test
+  <<: *login
+  <<: *connection
+
+# production:
+#   database: bgn_production
+#   username: bgn
+#   password: <%= ENV['BGN_DATABASE_PASSWORD'] %>
